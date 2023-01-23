@@ -9,11 +9,13 @@
     box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
+html{
+    scroll-behavior: smooth;
+
 }
 
 body{
+    height: 100%;
     display: flex;
     background-image: url("../images/background.png");
     background-size: 40%;
@@ -40,12 +42,27 @@ section{
     justify-content: flex-end;
 }
 
-.principal-navbar button{
-    background-color: initial;
-    border: none;
+.principal-navbar a{
     font-size: 20pt;
     margin: 1em 1em;
     color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.principal-navbar a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.principal-navbar a:hover::after{
+    width: 100%;
 }
 
 
@@ -80,8 +97,8 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    height: 75rem;
+    padding: 1rem 2rem;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -89,19 +106,34 @@ article{
     font-size: 54pt;
     font-weight: normal;
     margin: 0.5rem;
+    color: #4D423A;
+}
+
+.sobre h2{
+    font-size: 22pt;
+    font-weight: normal;
+    color: #4D423A;
 }
 
 .sobre h3{
-    font-size: 26pt;
+    font-size: 20pt;
     font-weight: normal;
+    color: #4D423A;
 }
 
 .sobre-descricao{
     width: 90%;
+    margin-top: 1rem;
+    text-align: end;
 }
 
 .sobre-descricao p, .sobre-descricao ul li{
-    font-size: 22pt;
+    font-size: 18pt;
+    color: #4D423A;
+}
+
+.sobre-descricao p{
+    margin-left: 17rem;
 }
 
 .sobre-descricao ul li{
@@ -163,6 +195,7 @@ footer{
     color: #fff;
     list-style: none;
     padding-bottom: 20vh;
+    z-index: 2;
 }
 
 .rodape ul li{
@@ -191,7 +224,11 @@ footer{
     left: 0;
 }
 
-.rodape a::after{
+.rodape{
+    padding-top: 1rem;
+}
+
+.rodape ul li a::after{
     content: "";
     width: 0%;
     height: 2px;
@@ -224,9 +261,16 @@ footer{
     }
 }
 
+@media screen and (max-width: 
+1024px){
+    .sobre-descricao p{
+        margin-left: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .sobre-descricao p, .sobre-descricao ul li{
-        font-size: 21pt;
+        font-size: 17pt;
     }
     .rodape > picture > img {
         bottom: 20%;
@@ -235,32 +279,29 @@ footer{
 
 @media screen and (max-width: 680px) {
     .sobre-descricao p, .sobre-descricao ul li{
-        font-size: 20pt;
+        font-size: 17pt;
     }
     
     .sobre{
-        height: 83rem;
+        height: 70rem;
     }
 
-    .sobre-descricao2 {
-        margin-left: 0;
-    }
-
-    .sobre-descricao2 p:nth-child(2){
+    .sobre-descricao2 p:nth-child(2), .sobre-descricao2 p:nth-child(3){
         margin-left: 40vw;
+    }
+
+    .sobre-descricao2{
+        margin-left: 0;
     }
 
 }
 
-@media screen and (max-width: 520px) {
-    .sobre {
-        height: 85rem;
-    }
+@media screen and (max-width: 530px) {
     .sobre h1, .rodape h1{
         font-size: 50pt;
     }
 
-    .sobre h3{
+    .sobre h2{
         font-size: 20pt;
         font-weight: normal;
     }
@@ -278,10 +319,6 @@ footer{
         width: 40px;
         padding: 5px;
     }
-}
-
-@media screen and (max-width: 480px) {
-
 
     .sobre-descricao2 p:nth-child(2){
         margin-left: 0;
@@ -292,16 +329,28 @@ footer{
     }
 
     .sobre img{
-        min-width: 20rem;
+        min-width: 19rem;
     }
 }
-@media screen and (max-width: 360px) {
-    .sobre {
-        height: 95rem;
-    }
+
+@media screen and (max-width: 480px) {
     .sobre img{
-        min-width: 15rem;
+        min-width: 18rem;
     }
+
+    .sobre-descricao2 p:nth-child(2){
+        margin-left: 0;
+    }
+
+    .sobre-descricao p, .sobre-descricao ul li{
+        font-size: 14pt;
+    }
+}
+@media screen and (max-width: 390px) {
+    .sobre{
+        height: 73rem;
+    }
+
     .rodape a{
         display: flex;
         text-decoration: none;
@@ -314,5 +363,21 @@ footer{
     .rodape ul li img{
         width: 30px;
         padding: 5px;
+    }
+
+    .sobre-descricao2 p:nth-child(3){
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .sobre-descricao p, .sobre-descricao ul li{
+        font-size: 13pt;
+    }
+
+    .sobre h3{
+        font-size: 18pt;
+        font-weight: normal;
+        color: #4D423A;
     }
 }
