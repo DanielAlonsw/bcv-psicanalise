@@ -44,7 +44,7 @@ section{
 
 .principal-navbar a{
     font-size: 20pt;
-    margin: 1em 1em;
+    margin: 1vh 3vw;
     color: #fff;
     text-decoration: none;
     position: relative;
@@ -81,7 +81,7 @@ section{
 }
 
 .principal-logo img{
-    width: 75%;
+    width: 35vw;
 }
 
 .sobre{
@@ -154,7 +154,7 @@ article{
 }
 
 .sobre-descricao2 p{
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .sobre img{
@@ -231,7 +231,7 @@ footer{
 .rodape ul li a::after{
     content: "";
     width: 0%;
-    height: 2px;
+    height: 1px;
     background-color: #fff;
     position: absolute;
     bottom: -3px;
@@ -379,5 +379,32 @@ footer{
         font-size: 18pt;
         font-weight: normal;
         color: #4D423A;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .rodape a{
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        align-items: center;
+        font-size: 18pt;
+    }
+    
+    .rodape ul li img{
+        width: 30px;
+        padding: 5px;
+    }
+
+    .rodape h1 {
+        font-size: 48pt;
+        font-weight: normal;
+        padding: 0.5rem;
+        color: #fff;
+    }
+
+    .rodape {
+        padding-top: 0;
     }
 }

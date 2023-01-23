@@ -22,7 +22,7 @@ function smoothScrollTo(endX, endY, duration) {
   const distanceY = endY - startY;
   const startTime = new Date().getTime();
 
-  duration = typeof duration !== "undefined" ? duration : 1000;
+  duration = 2000
 
   const easeInOutQuart = (time, from, distance, duration) => {
     if ((time /= duration / 2) < 1)
