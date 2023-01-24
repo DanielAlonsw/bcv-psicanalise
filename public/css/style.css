@@ -149,10 +149,6 @@ article{
     color: #615344;
 }
 
-.sobre-descricao p{
-
-}
-
 .sobre-descricao ul li{
     list-style: none;
 }
@@ -305,6 +301,10 @@ footer{
     
     .sobre{
         height: 65rem;
+    }
+
+    .sobre-descricao p, .sobre-descricao ul li{
+        font-weight: 14pt;
     }
 
     .sobre-descricao2 p:nth-child(2), .sobre-descricao2 p:nth-child(3){
