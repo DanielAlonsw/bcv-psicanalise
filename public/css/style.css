@@ -127,13 +127,13 @@ article{
 }
 
 .sobre h2{
-    font-size: 22pt;
+    font-size: 20pt;
     color: #615344;
 
 }
 
 .sobre h3{
-    font-size: 22pt;
+    font-size: 20pt;
     font-weight: normal;
     color: #615344;
 }
@@ -141,17 +141,16 @@ article{
 .sobre-descricao{
     width: 90%;
     margin-top: 1rem;
-    text-align: end;
 }
 
 .sobre-descricao p, .sobre-descricao ul li{
+    margin-left: 26%;
     font-size: 16pt;
     color: #615344;
 }
 
 .sobre-descricao p{
-    margin-left: 24rem;
-    margin-top: 3rem;
+
 }
 
 .sobre-descricao ul li{
@@ -176,7 +175,7 @@ article{
 }
 
 .sobre img{
-    width: 40vw;
+    width: 32vw;
     max-width: 32rem;
     min-width: 18rem;
     position: absolute;
@@ -278,7 +277,7 @@ footer{
 
 @media screen and (max-width: 
 1024px){
-    .sobre-descricao p{
+    .sobre-descricao p, .sobre-descricao ul li{
         margin-left: 0;
     }
     .sobre-descricao{
@@ -372,6 +371,14 @@ footer{
     .principal-navbar a {
         font-size: 14pt;
     }
+
+    .sobre-descricao p, .sobre-descricao ul li{
+        font-size: 12pt;
+    }
+
+    .sobre{
+        height: 60rem;
+    }
     
     .rodape ul li img{
         width: 30px;
@@ -383,16 +390,14 @@ footer{
     }
 }
 
-@media screen and (max-width: 390px) {
-    .sobre-descricao p, .sobre-descricao ul li{
-        font-size: 12pt;
-    }
-
+@media screen and (max-width: 350px) {
     .sobre{
-        height: 68rem;
+        height: 65rem;
     }
 
 }
+
+
 
 @media screen and (max-height: 550px) {
     .rodape a{
