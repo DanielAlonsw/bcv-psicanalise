@@ -290,7 +290,9 @@ footer{
 }
 
 @media screen and (max-width: 680px) {
-
+    .sobre{
+        min-height: 880px;
+    }
     section {
         height: 35vh;
     }
@@ -315,6 +317,9 @@ footer{
 }
 
 @media screen and (max-width: 530px) {
+    .sobre{
+        min-height: 920px;
+    }
     main{
         margin: 1.5em
     }
@@ -340,9 +345,6 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
-    .sobre{
-        min-height: 880px;
-    }
     .sobre img{
         min-width: 80%;
     }
