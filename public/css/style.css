@@ -114,7 +114,7 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 20px;
     min-height: 720px;
 }
 
@@ -122,19 +122,7 @@ article{
     font-size: 30pt;
     font-weight: normal;
     color: #817160;
-}
-
-.sobre h2{
-    font-size: 16pt;
-    color: #817160;
-    margin-top: 5%;
-
-}
-
-.sobre h3{
-    font-size: 14pt;
-    font-weight: normal;
-    color: #817160;
+    margin-top: 4%;
 }
 
 .sobre-descricao{
@@ -143,7 +131,6 @@ article{
 }
 
 .sobre-descricao p, .sobre-descricao ul li{
-    margin-left: 26%;
     font-size: 14pt;
     color: #817160;
 }
@@ -161,8 +148,7 @@ article{
 }
 
 .sobre-descricao2{
-    text-align: end;
-    margin-left: 30vw;
+    margin-right: 30vw;
 }
 
 .sobre-descricao2 p{
@@ -170,12 +156,12 @@ article{
 }
 
 .sobre img{
-    width: 32vw;
+    width: 31vw;
     max-width: 32rem;
-    min-width: 18rem;
+    min-width: 15rem;
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
 }
 
 footer{
@@ -197,6 +183,7 @@ footer{
     font-size: 30pt;
     font-weight: normal;
     color: #fff;
+    margin-top: 4%;
 }
 
 .rodape ul{
@@ -219,11 +206,11 @@ footer{
     color: #fff;
     position: relative;
     align-items: center;
-    font-size: 18pt;
+    font-size: 14pt;
 }
 
 .rodape ul li img{
-    width: 50px;
+    width: 45px;
     padding: 10px;
 }
 
@@ -291,8 +278,11 @@ footer{
 }
 
 @media screen and (max-width: 680px) {
+    .principal-logo img {
+        max-width: 8em;
+    }
     .sobre{
-        min-height: 880px;
+        min-height: 780px;
     }
     section {
         height: 35vh;
@@ -308,7 +298,7 @@ footer{
     }
 
     .sobre-descricao2{
-        margin-left: 0;
+        margin-right: 0;
     }
 
     footer{
@@ -318,9 +308,6 @@ footer{
 }
 
 @media screen and (max-width: 530px) {
-    .sobre{
-        min-height: 920px;
-    }
     main{
         margin: 1.5em
     }
@@ -346,10 +333,9 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
-    .sobre img{
-        min-width: 80%;
+    .sobre {
+        min-height: 800px;
     }
-
     .sobre h2, .sobre h3{
         font-size: 14pt;
     }
@@ -363,6 +349,9 @@ footer{
     }
 }
 @media screen and (max-width: 390px) {
+    .sobre{
+        min-height: 880px;
+    }
     .principal-navbar a {
         font-size: 14pt;
     }
