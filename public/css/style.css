@@ -308,6 +308,10 @@ footer{
 }
 
 @media screen and (max-width: 530px) {
+    .sobre h1, .rodape h1{
+        font-size: 24pt;
+    }
+
     main{
         margin: 1.5em
     }
