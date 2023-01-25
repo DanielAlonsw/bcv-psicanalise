@@ -42,7 +42,7 @@ body{
 main{
     margin: 3em;
     width: 100vw;
-    box-shadow: 0px 0px 30px #615344
+    box-shadow: 0px 0px 30px #C9C0B7;
 }
 
 section{
@@ -80,7 +80,6 @@ section{
     width: 100%;
 }
 
-
 .principal{
     display: flex;
     width: 100%;
@@ -114,38 +113,38 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem;
-    min-height: 880px;
+    padding-top: 10px;
+    min-height: 720px;
 }
 
 .sobre h1{
     font-size: 30pt;
     font-weight: normal;
-
-    color: #615344;
+    color: #817160;
 }
 
 .sobre h2{
-    font-size: 20pt;
-    color: #615344;
+    font-size: 16pt;
+    color: #817160;
+    margin-top: 5%;
 
 }
 
 .sobre h3{
-    font-size: 20pt;
+    font-size: 16pt;
     font-weight: normal;
-    color: #615344;
+    color: #817160;
 }
 
 .sobre-descricao{
     width: 90%;
-    margin-top: 1rem;
+    margin-top: 120px;
 }
 
 .sobre-descricao p, .sobre-descricao ul li{
     margin-left: 26%;
-    font-size: 16pt;
-    color: #615344;
+    font-size: 14pt;
+    color: #817160;
 }
 
 .sobre-descricao ul li{
@@ -341,9 +340,11 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
-    
+    .sobre{
+        min-height: 880px;
+    }
     .sobre img{
-        min-width: 14rem;
+        min-width: 80%;
     }
 
     .sobre h2, .sobre h3{
